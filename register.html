@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuoGeo</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/variables.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-logo.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-general.css">
+  </head>
+  <body>
+    <nav id="menu-bar">
+      <input type="checkbox" name="menu-button" id="menu-button">
+      <script>
+	function closemenu()
+	{
+	    document.getElementById("menu-button").checked = false;
+	}
+      </script>
+      <div id="overlay" onclick="closemenu()"></div>
+      <div></div>
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul id="menu-list">
+        <li><a class="menu-group" href="./index.html">
+            <p>Úvod</p>
+        </a></li>
+	<li><a class="menu-group" href="./rules.html">
+            <p>Pravidla</p>
+        </a></li>
+        <li><a class="menu-group" href="./register.html">
+            <p>Registrace</p>
+        </a></li>
+        <li><a class="menu-group" href="./contact.html">
+            <p>Kontakty</p>
+        </a></li>
+      </ul>
+    </nav>
+    
+    <div id="strip">
+      <div id="strip-left"></div>
+      <div id="strip-logo"></div>
+      <div id="strip-right"></div>
+    </div>
+    <div id="page">
+      <div id="page-left">
+	<h1> Registrace </h1>
+	<p> Kapacita je pro každou kategorii a místo konání <b>60 týmů.</b></p>
+
+	<p> V <b>Praze</b> se soutěž koná v budově MFF UK na adrese <b>V Holešovičkách 747/2, 180 00 Praha 8.</b>
+
+	<p> V <b>Bratislavě</b> se soutěž koná v budově MFF UK na adrese <b>Mlynská dolina pavilon F1, 842 48 Bratislava.</b>
+	
+	<p>K registraci vyplňte následující formulář. Za každý tým ho vyplňte prosím nejvýše jednou. <b>Registrujte se do 3.2.2025.</b>
+	</p>
+
+	<table>
+	  <tr>
+	    <th colspan="2">Počet registrovaných týmů v Praze</th>
+	  </tr>
+	  <tr>
+	    <td>Základoškoláci</td>
+	    <td id="zs-praha-data" class="right"><img class="loader" src="./css-loader.gif"></td>
+	  </tr>
+	  <tr>
+	    <td>Středoškoláci</td>
+	    <td id="ss-praha-data" class="right"><img class="loader" src="./css-loader.gif"></td>
+	  </tr>
+	  <tr>
+	    <th colspan="2">Počet registrovaných týmů v Bratislavě</th>
+	  </tr>
+	  <tr>
+	    <td>Základoškoláci</td>
+	    <td id="zs-blava-data" class="right"><img class="loader" src="./css-loader.gif"></td>
+	  </tr>
+	  <tr>
+	    <td>Středoškoláci</td>
+	    <td id="ss-blava-data" class="right"><img class="loader" src="./css-loader.gif"></td>
+	  </tr>
+	</table>
+	<script>
+	  const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTCtLFel5a4IrXiGeM64cBNZvl83XJNhcEF85RubgM3I00_fpB1i5h9jfqGPcGs3SRWapLnmTDYDM1T/pub?gid=351869279&single=true&output=csv";
+
+	  function fetchSheetData() {
+	      fetch(csvUrl, {cache: "no-store"})
+		  .then((response) => {
+		      if (!response.ok) {
+			  throw new Error("Network response was not ok");
+		      }
+		      return response.text();
+		  })
+		  .then((csv) => {
+		      const rows = csv.trim().split("\n");
+		      const values = rows.map((row) => row.split(",")[0]);
+		      document.getElementById("zs-praha-data").innerHTML = values[0];
+		      document.getElementById("zs-blava-data").innerHTML = values[1];
+		      document.getElementById("ss-praha-data").innerHTML = values[2];
+		      document.getElementById("ss-blava-data").innerHTML = values[3];
+
+		      console.log(values);
+		  })
+		  .catch((error) => {
+		      console.error("Error fetching sheet data:", error);
+		  });
+	  }
+	  fetchSheetData();
+	</script>
+      </div>
+      <div class="center">
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSALXc3yUHDUog1lp-fcNrcKDi3TT_vbw8FcSgJi2c8tq6fw/viewform?embedded=true"></iframe>
+      </div>
+    </div>
+  </body>
+</html>

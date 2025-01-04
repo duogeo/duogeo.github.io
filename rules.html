@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuoGeo</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/variables.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-logo.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-general.css">
+  </head>
+  <body>
+    <nav id="menu-bar">
+      <input type="checkbox" name="menu-button" id="menu-button">
+      <script>
+	function closemenu()
+	{
+	    document.getElementById("menu-button").checked = false;
+	}
+      </script>
+      <div id="overlay" onclick="closemenu()"></div>
+      <div></div>
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul id="menu-list">
+        <li><a class="menu-group" href="./index.html">
+            <p>Úvod</p>
+        </a></li>
+	<li><a class="menu-group" href="./rules.html">
+            <p>Pravidla</p>
+        </a></li>
+        <li><a class="menu-group" href="./register.html">
+            <p>Registrace</p>
+        </a></li>
+        <li><a class="menu-group" href="./contact.html">
+            <p>Kontakty</p>
+        </a></li>
+      </ul>
+    </nav>
+    
+    <div id="strip">
+      <div id="strip-left"></div>
+      <div id="strip-logo"></div>
+      <div id="strip-right"></div>
+    </div>
+
+    <div id="page">
+      <div id="page-left">
+	<h1> Pravidla <h2>
+	    <h2> Vobecné informace </h2>
+	    <ul>
+	      <li>Asi je nějak víc kategorií?</li>
+	      <li>Soutěží se výhradně ve dvojicích, účast jednotlivců není možná (pokud byste se rádi zúčastnili ale nemáte parťáka/parťačku, napište nám)</li>
+	      <li>Týmy budou řešit buď v samostatné místnosti, nebo ve větším sále v dostatečné vzdálenosti od ostatních týmů. V takovém případě prosíme o ohleduplnost, snažte se nenapovídat ani příliš nerušit.</li>
+	    </ul>
+	    
+	    <h2>Počas sútaže</h2>
+	    <ul>
+	      <li>V rámci své dvojice můžete volně komunikovat, předávat si náčrty, kusy řešení apod.</li>
+	      <li>S účastníky mimo svoji dvojici vůbec nekomunikujte a neposlouchejte, co si říkají.</li>
+	      <li>Soutěžní čas je X hodin pro tuto kategorii a Y pro jinou</li>
+	      <li>Vyplňte hlavičku?</li>
+	      <li>Řešení sepisujte dobře čitelnou tmavou propiskou?</li>
+	      <li>Řešení každé úlohy pište na samostatný list papíru, při použití více listů je očíslujte.</li>
+	      <li>Po konci časového limitu seřaďte svá řešení, zkontrolujte, že jsou vícestranná řešení očíslovaná, a odevzdejte každou úlohu na jí příslušnou hromádku.</li>
+	      <li>V případě neodevzdání úlohy nám prosím odevzdejte prázdný list (abychom věděli, že se neztratil) </li>
+	    </ul>
+	    <h2>Pomôcky</h2>
+	    <p>Každý tým dostane zadání spolu s papíry na sepisování řešení a dostatkem čistých papírů (lze požádat o přídatné). Během soutěže je povoleno používat následující pomůcky:</p>
+	    <ul>
+	      <li>Psací a rýsovací potřeby</li>
+	      <li>Jídlo a pití</li>
+	      <li>Léky</li>
+	      <li>Mechanické hodinky</li>
+	    </ul>
+	    <p>Naopak, explicitně zakázány jsou následující předměty (mějte je schované a vypnuté v tašce):</p>
+	    <ul>
+	      <li>Všechna elektronická zařízení, včetně kalkulaček</li>
+	      <li>Jakákoliv literatura, zápisky, tabulky.</li>
+	      <li>Vlastní papíry? Ale to asi není potřeba.</li>
+	    </ul>
+      </div>
+    </div>
+  </body>
+</html>
