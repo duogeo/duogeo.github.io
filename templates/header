@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuoGeo</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/variables.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-logo.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-general.css">
+  </head>
+  <body>
+    <nav id="menu-bar">
+      <input type="checkbox" name="menu-button" id="menu-button">
+      <script>
+	function closemenu()
+	{
+	    document.getElementById("menu-button").checked = false;
+	}
+      </script>
+      <div id="overlay" onclick="closemenu()"></div>
+      <div></div>
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul id="menu-list">
+        <li><a class="menu-group" href="./index.html">
+            <p>Úvod</p>
+        </a></li>
+	<li><a class="menu-group" href="./rules.html">
+            <p>Pravidla</p>
+        </a></li>
+        <li><a class="menu-group" href="./register.html">
+            <p>Registrace</p>
+        </a></li>
+        <li><a class="menu-group" href="./contact.html">
+            <p>Kontakty</p>
+        </a></li>
+      </ul>
+    </nav>
+    
+    <div id="strip">
+      <div id="strip-left"></div>
+      <div id="strip-logo"></div>
+      <div id="strip-right"></div>
+    </div>
