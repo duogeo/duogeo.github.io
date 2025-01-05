@@ -30,6 +30,11 @@ th, td {
   padding: 8px;
 }
 
+.problemimg {
+    width: calc(min(600px,100%));
+    margin: 0 auto;
+}
+
 tr:nth-child(even){background-color: #f2f2f2}
 
 th {
