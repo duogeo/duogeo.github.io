@@ -49,7 +49,7 @@ th {
 iframe{
     margin: 0px auto;
     width: 100%;
-    height: 800px;
+    height: 1000px;
     border: none;
 }
 
@@ -181,6 +181,10 @@ iframe{
 .box-ul > li{
     margin: 20px 0;
     list-style: none;
+}
+
+.blue:visited {
+    color: blue;
 }
 
 .contact-box{
