@@ -75,6 +75,12 @@ iframe{
     gap: 0px;
 }
 
+.flex.logos{
+    gap: 0px;
+    margin: 0;
+    padding: 0;
+}
+
 .grid{
     display: inline-grid;
     row-gap: 10px;
