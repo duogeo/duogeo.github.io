@@ -6,7 +6,7 @@
 #menu-bar {
     background: var(--primary-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
