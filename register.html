@@ -105,14 +105,18 @@
 		      return response.text();
 		  })
 		  .then((csv) => {
-		      const rows = csv.trim().split("\n");
-		      const values = rows.map((row) => row.split(",")[0]);
-		      document.getElementById("zs-praha-data").innerHTML = values[0];
-		      document.getElementById("zs-blava-data").innerHTML = values[1];
-		      document.getElementById("ss-praha-data").innerHTML = values[2];
-		      document.getElementById("ss-blava-data").innerHTML = values[3];
+            
+			const values = csv.trim().split("\n").map((row) => {
+				const stringValue = row.split(",")[0];
+                const intValue = parseInt(stringValue, 10);
+				// The exact values < 15 are hidden 🙃
+                return intValue < 15 ? "< 15" : intValue;
+            });
 
-		      console.log(values);
+            document.getElementById("zs-praha-data").innerHTML = values[0];
+            document.getElementById("zs-blava-data").innerHTML = values[1];
+            document.getElementById("ss-praha-data").innerHTML = values[2];
+            document.getElementById("ss-blava-data").innerHTML = values[3];
 		  })
 		  .catch((error) => {
 		      console.error("Error fetching sheet data:", error);
