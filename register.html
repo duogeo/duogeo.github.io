@@ -94,7 +94,7 @@
 	  </tr>
 	</table>
 	<script>
-	  const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTCtLFel5a4IrXiGeM64cBNZvl83XJNhcEF85RubgM3I00_fpB1i5h9jfqGPcGs3SRWapLnmTDYDM1T/pub?gid=351869279&single=true&output=csv";
+	  const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTCtLFel5a4IrXiGeM64cBNZvl83XJNhcEF85RubgM3I00_fpB1i5h9jfqGPcGs3SRWapLnmTDYDM1T/pub?gid=135760891&single=true&output=csv";
 
 	  function fetchSheetData() {
 	      fetch(csvUrl, {cache: "no-store"})
@@ -105,14 +105,7 @@
 		      return response.text();
 		  })
 		  .then((csv) => {
-            
-			const values = csv.trim().split("\n").map((row) => {
-				const stringValue = row.split(",")[0];
-                const intValue = parseInt(stringValue, 10);
-				// The exact values < 15 are hidden 🙃
-                return intValue < 15 ? "< 15" : intValue;
-            });
-
+        	const values = csv.trim().split("\n").map((row) =>  row.split(",")[0]);
             document.getElementById("zs-praha-data").innerHTML = values[0];
             document.getElementById("zs-blava-data").innerHTML = values[1];
             document.getElementById("ss-praha-data").innerHTML = values[2];
