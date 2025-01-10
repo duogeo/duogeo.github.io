@@ -121,6 +121,7 @@ iframe{
     margin: 20px 0;
     border-radius: 5px;
     background-color: #f9f9f9;
+    text-align: justify;
 }
 
 @media (max-width: 1100px) {
