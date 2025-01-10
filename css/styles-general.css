@@ -115,6 +115,14 @@ iframe{
     grid-row-end: 1;
 }
 
+.problem-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
 @media (max-width: 1100px) {
     #box1{
 	grid-column-start: 1;
