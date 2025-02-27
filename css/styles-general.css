@@ -81,6 +81,62 @@ iframe{
     padding: 0;
 }
 
+@media (max-width: 700px) {
+    .tym-table{
+	font-size: 10px;
+    }
+}
+
+.tym-table td, .tym-table th{
+    text-align: center;
+}
+
+.tym-table td:last-child{
+    border-left: solid 2px var(--menu-text-color);
+    font-weight: bold;
+}
+
+.tym-table td:nth-child(2){
+    border-right: solid 2px var(--menu-text-color);
+    border-left: solid 2px var(--menu-text-color);
+}
+
+.tym-vysledky{
+    display: flex;
+    flex-direction: row;
+    min-width: 500px;
+    justify-content: space-between;
+}
+
+.tym-vysledky div{
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+@media (max-width: 1300px) {
+    .tym-vysledky{
+	flex-direction: column;
+	min-width: 300px;
+    }
+    .tym-vysledky div{
+	width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .tym-vysledky{
+	min-width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .tym-vysledky{
+	min-width: 0px;
+    }
+}
+
+
 .grid{
     display: inline-grid;
     row-gap: 10px;

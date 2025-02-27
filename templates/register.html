@@ -1,17 +1,5 @@
 <div id="page">
 	<div id="page-left">
-		<h2> Aktuální ročník </h2>
-		<p> Kapacita je pro každou kategorii a místo konání <b>60 týmů.</b></p>
-
-		<p> Soutěž <b>kategorie ZŠ</b> bude probíhat v neděli <b>9.2.2025</b> od <b>11:00 do 16:00 hodin.</b></p>
-
-		<p> Soutěž <b>kategorie SŠ</b> bude probíhat v neděli <b>16.2.2025</b> od <b>11:00 do 16:00 hodin.</b></p>
-
-		<p> V <b>Praze</b> se soutěž koná v budově IMPAKT MFF UK na adrese <b>V Holešovičkách 747/2, 180 00 Praha 8.</b>
-
-		<p> V <b>Bratislavě</b> se soutěž koná v budově FMFI UK na adrese <b>Mlynská dolina pavilon F1, 842 48
-				Bratislava.</b>
-
 		<h2> Zadání </h2>
 
 		<p>Kategorie ZŠ v češtině a slovenštině: <a href="./zadani/ZS_CZ.pdf">CZ</a> / <a
@@ -28,53 +16,471 @@
 
 		<p>Výsledky se tady objeví do půlnoci <b>27. 2. pro ZŠ</b> a do půlnoci <b>5. 3. pro SŠ.</b> </p>
 
-		<table>
-			<tr>
-				<th colspan="2">Počet registrovaných týmů v Praze</th>
-			</tr>
-			<tr>
-				<td>Základoškoláci</td>
-				<td id="zs-praha-data" class="right"><img class="loader" src="./css-loader.gif"></td>
-			</tr>
-			<tr>
-				<td>Středoškoláci</td>
-				<td id="ss-praha-data" class="right"><img class="loader" src="./css-loader.gif"></td>
-			</tr>
-			<tr>
-				<th colspan="2">Počet registrovaných týmů v Bratislavě</th>
-			</tr>
-			<tr>
-				<td>Základoškoláci</td>
-				<td id="zs-blava-data" class="right"><img class="loader" src="./css-loader.gif"></td>
-			</tr>
-			<tr>
-				<td>Středoškoláci</td>
-				<td id="ss-blava-data" class="right"><img class="loader" src="./css-loader.gif"></td>
-			</tr>
-		</table>
-		<script>
-			const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTCtLFel5a4IrXiGeM64cBNZvl83XJNhcEF85RubgM3I00_fpB1i5h9jfqGPcGs3SRWapLnmTDYDM1T/pub?gid=135760891&single=true&output=csv";
+<table class="tym-table">
+<tr>
+<th></th>
+<th>Tým</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>Součet</th>
+</tr>
+<tr>
+<td>1.-2.</td>
+<td><div class="tym-vysledky"><div>Tomáš Dočekal</div><div>Dan Školař</div></div></td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>36</td>
+</tr>
+<tr>
+<td>1.-2.</td>
+<td><div class="tym-vysledky"><div>Matúš Polgár</div><div>Šimon Roguľa</div></div></td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>36</td>
+</tr>
+<tr>
+<td>3</td>
+<td><div class="tym-vysledky"><div>Martin Kamendy</div><div>Marek Dulák</div></div></td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>4</td>
+<td>6</td>
+<td>34</td>
+</tr>
+<tr>
+<td>4</td>
+<td><div class="tym-vysledky"><div>Alžběta Reitmayerová</div><div>Robin Tesař</div></div></td>
+<td>6</td>
+<td>6</td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>5</td>
+<td>33</td>
+</tr>
+<tr>
+<td>5</td>
+<td><div class="tym-vysledky"><div>Mikuláš Nácovský</div><div>Daniel Vévoda</div></div></td>
+<td>1</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>31</td>
+</tr>
+<tr>
+<td>6</td>
+<td><div class="tym-vysledky"><div>Martin Domány</div><div>Timotej Války</div></div></td>
+<td>2</td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>30</td>
+</tr>
+<tr>
+<td>7</td>
+<td><div class="tym-vysledky"><div>Patrik Vrba</div><div>Danylo Filonenko</div></div></td>
+<td>3</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>3</td>
+<td>3</td>
+<td>27</td>
+</tr>
+<tr>
+<td>8</td>
+<td><div class="tym-vysledky"><div>Patrik Sova</div><div>Jan Šťota</div></div></td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+</tr>
+<tr>
+<td>9</td>
+<td><div class="tym-vysledky"><div>Jan Rumánek</div><div>Petr Dvořák</div></div></td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>20</td>
+</tr>
+<tr>
+<td>10.-14.</td>
+<td><div class="tym-vysledky"><div>Antonín Havel</div><div>Sebastian Wang</div></div></td>
+<td>6</td>
+<td>6</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>19</td>
+</tr>
+<tr>
+<td>10.-14.</td>
+<td><div class="tym-vysledky"><div>Vojtěch Kolenatý</div><div>Arina Gerasymenko</div></div></td>
+<td>4</td>
+<td>6</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>19</td>
+</tr>
+<tr>
+<td>10.-14.</td>
+<td><div class="tym-vysledky"><div>Filip Kučerík</div><div>Zuzana Pethö</div></div></td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>19</td>
+</tr>
+<tr>
+<td>10.-14.</td>
+<td><div class="tym-vysledky"><div>Diana Haláková</div><div>Matej Adásek</div></div></td>
+<td>6</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>4</td>
+<td>1</td>
+<td>19</td>
+</tr>
+<tr>
+<td>10.-14.</td>
+<td><div class="tym-vysledky"><div>Johana Elizabeth Smítková</div><div>Beáta Ekrtová</div></div></td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>6</td>
+<td>2</td>
+<td>4</td>
+<td>19</td>
+</tr>
+<tr>
+<td>15.-16.</td>
+<td><div class="tym-vysledky"><div>Tereza Ondroušková</div><div>Ella Konečná</div></div></td>
+<td>6</td>
+<td>6</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>18</td>
+</tr>
+<tr>
+<td>15.-16.</td>
+<td><div class="tym-vysledky"><div>Lukáš Vojtík</div><div>Lenka Tomanová</div></div></td>
+<td>3</td>
+<td>6</td>
+<td>0</td>
+<td>2</td>
+<td>6</td>
+<td>1</td>
+<td>18</td>
+</tr>
+<tr>
+<td>17</td>
+<td><div class="tym-vysledky"><div>Denis Rybalchenko</div><div>Daniel Jirák</div></div></td>
+<td>0</td>
+<td>6</td>
+<td>6</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>17</td>
+</tr>
+<tr>
+<td>18.-19.</td>
+<td><div class="tym-vysledky"><div>Míchal Vitásek</div><div>Tomáš Vitásek</div></div></td>
+<td>0</td>
+<td>6</td>
+<td>6</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>15</td>
+</tr>
+<tr>
+<td>18.-19.</td>
+<td><div class="tym-vysledky"><div>Alexandra Fedosova</div><div>Ludmila Košíková</div></div></td>
+<td>6</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>15</td>
+</tr>
+<tr>
+<td>20.-22.</td>
+<td><div class="tym-vysledky"><div>Vojtěch Bárta</div><div>Bedřich Škop</div></div></td>
+<td>0</td>
+<td>6</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>12</td>
+</tr>
+<tr>
+<td>20.-22.</td>
+<td><div class="tym-vysledky"><div>Eva-Margarita Migel</div><div>Tram Anh Nguyen</div></div></td>
+<td>2</td>
+<td>1</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>12</td>
+</tr>
+<tr>
+<td>20.-22.</td>
+<td><div class="tym-vysledky"><div>Ema Mária Martinková</div><div>Sophia Ľubica Parsons</div></div></td>
+<td>5</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>12</td>
+</tr>
+<tr>
+<td>23</td>
+<td><div class="tym-vysledky"><div>Jakub Fišer</div><div>Jakub Lacyk</div></div></td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td>24.-.25.</td>
+<td><div class="tym-vysledky"><div>Irena Bogdanova</div><div>Polina Malygina</div></div></td>
+<td>1</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr>
+<td>24.-.25.</td>
+<td><div class="tym-vysledky"><div>Ivana Kiselá</div><div>Viktoriia Boyko</div></div></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>10</td>
+</tr>
+<tr>
+<td>26</td>
+<td><div class="tym-vysledky"><div>Anežka Holzknechtová</div><div>Lucie Šparlinková</div></div></td>
+<td>4</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td>27.-28.</td>
+<td><div class="tym-vysledky"><div>Alžběta Zaňková</div><div>Kristýna Kolářová</div></div></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>7</td>
+</tr>
+<tr>
+<td>27.-28.</td>
+<td><div class="tym-vysledky"><div>Marie Pawingerová</div><div>Hana Kadeřábková</div></div></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>7</td>
+</tr>
+<tr>
+<td>29.-30.</td>
+<td><div class="tym-vysledky"><div>Elena Váňová</div><div>Anna Vránková</div></div></td>
+<td>1</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td>29.-30.</td>
+<td><div class="tym-vysledky"><div>Simon Chylák</div><div>Alex Mlích</div></div></td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td>31.-33.</td>
+<td><div class="tym-vysledky"><div>Sebastian Surovec</div><div>Barbora Zajíčková</div></div></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>31.-33.</td>
+<td><div class="tym-vysledky"><div>Jan Koukal</div><div>Jakub Houdek</div></div></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>31.-33.</td>
+<td><div class="tym-vysledky"><div>Petr Čmuchálek</div><div>Georghe Buga</div></div></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td>34.-35.</td>
+<td><div class="tym-vysledky"><div>Martin Anar Jelínek</div><div>Jakub Štych</div></div></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>34.-35.</td>
+<td><div class="tym-vysledky"><div>Samuel Mihál</div><div>Karolína Hlubinová</div></div></td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>36</td>
+<td><div class="tym-vysledky"><div>Laura Šarišská</div><div>Nicol Knapová</div></div></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td>37.-39.</td>
+<td><div class="tym-vysledky"><div>Erik Nielsen</div><div>Matouš Poláček</div></div></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>37.-39.</td>
+<td><div class="tym-vysledky"><div>Anna Simbartlová</div><div>Lucie Štěchová</div></div></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>37.-39.</td>
+<td><div class="tym-vysledky"><div>Viktória Vanáková</div><div>Bianka Oľšavská</div></div></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>40</td>
+<td><div class="tym-vysledky"><div>Matúš Dulák</div><div>Artur Zorn</div></div></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>41</td>
+<td><div class="tym-vysledky"><div>Alexandra Gerhátová</div><div>Lucia Repiská</div></div></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</table>
 
-			function fetchSheetData() {
-				fetch(csvUrl, { cache: "no-store" })
-					.then((response) => {
-						if (!response.ok) {
-							throw new Error("Network response was not ok");
-						}
-						return response.text();
-					})
-					.then((csv) => {
-						const values = csv.trim().split("\n").map((row) => row.split(",")[0]);
-						document.getElementById("zs-praha-data").innerHTML = values[0];
-						document.getElementById("zs-blava-data").innerHTML = values[1];
-						document.getElementById("ss-praha-data").innerHTML = values[2];
-						document.getElementById("ss-blava-data").innerHTML = values[3];
-					})
-					.catch((error) => {
-						console.error("Error fetching sheet data:", error);
-					});
-			}
-			fetchSheetData();
-		</script>
+
 	</div>
 </div>
