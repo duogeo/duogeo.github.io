@@ -9,7 +9,7 @@ def printrow(row):
         print("<td>"+data.strip()+"</td>")
     print("</tr>")
 
-with open('zs.csv', newline='') as csvfile:
+with open('ss.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=',', quotechar='|')
     print("<table class=\"tym-table\">")
     print("<tr>")
