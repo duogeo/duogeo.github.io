@@ -1,0 +1,192 @@
+
+
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuoGeo</title>
+    <link rel="icon" type="image/png" href="https://duogeo.cz/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/variables.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-menu.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-logo.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-general.css?v=1.3">
+    <link rel="stylesheet" type="text/css" href="/css/styles-form.css?v=1.3">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css" integrity="sha384-7lU0muIg/i1plk7MgygDUp3/bNRA65orrBub4/OSWHECgwEsY83HaS1x3bljA/XV" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.js" integrity="sha384-RdymN7NRJ+XoyeRY4185zXaxq9QWOOx3O7beyyrRK4KQZrPlCDQQpCu95FoCGPAE" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"        
+	    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+  </head>
+  <body>
+    <nav id="menu-bar">
+      <div id="languages">
+        
+        
+        <a class="lang-link" href="https://duogeo.cz/">
+          <img src="https://duogeo.cz/flags/cz.svg" style="height:1.5em;width:100%">
+        </a>
+        
+        <a class="lang-link" href="https://duogeo.cz/en/">
+          <img src="https://duogeo.cz/flags/gb.svg" style="height:1.5em;width:100%">
+        </a>
+        
+        <a class="lang-link" href="https://duogeo.cz/pl/">
+          <img src="https://duogeo.cz/flags/pl.svg" style="height:1.5em;width:100%">
+        </a>
+        	  
+      </div>
+      <input type="checkbox" name="menu-button" id="menu-button">
+      <script>
+	function closemenu()
+	{
+	    document.getElementById("menu-button").checked = false;
+	}
+      </script>
+      <div id="overlay" onclick="closemenu()"></div>
+      <div></div>
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul id="menu-list">
+        <li><a class="menu-group" href="https://duogeo.cz/">
+            <p>Úvod</p>
+        </a></li>
+	      <li><a class="menu-group" href="https://duogeo.cz/rules/">
+            <p>O soutěži</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/current/">
+            <p>Aktuální ročník</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/archive/">
+            <p>Minulé ročníky</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/contact/">
+            <p>Kontakty</p>
+        </a></li>
+      </ul>
+    </nav>
+    
+    <div id="strip">
+      <div id="strip-left"></div>
+      <div id="strip-logo"></div>
+      <div id="strip-right"></div>
+    </div>
+
+    <div id="page">
+      
+
+<div class="grid">
+  
+  <div class="box" id="box1"><div class="box-element">
+      <h2>Kde?</h2>
+      <ul class="box-ul">
+	
+	<li><p><img class='flag' src='/flags/cz.svg'> <strong>Praha, Česko</strong></p>
+</li>
+	
+	<li><p><img class='flag' src='/flags/sk.svg'> <strong>Bratislava, Slovensko</strong></p>
+</li>
+	
+	<li><p><img class='flag' src='/flags/pl.svg'> <strong>Krakov, Polsko</strong></p>
+</li>
+	
+	<li><p><img class='flag' src='/flags/hr.svg'> <strong>Záhřeb, Chorvatsko</strong></p>
+</li>
+	
+      </ul>
+  </div></div>   
+  
+  <div class="box" id="box2"><div class="box-element">
+      <h2>Kdy?</h2>
+      <ul class="box-ul">
+	
+	<li><p><strong>Pátek 16.1.2026</strong> pro ZŠ</p>
+</li>
+	
+	<li><p><strong>Pátek 23.1.2026</strong> pro SŠ</p>
+</li>
+	
+      </ul>
+  </div></div>   
+  
+  <div class="box" id="box3"><div class="box-element">
+      <h2>Pro koho?</h2>
+      <ul class="box-ul">
+	
+	<li><p><strong>Začátečníky i pokročilé</strong> 📏</p>
+</li>
+	
+	<li><p><strong>Dvojčlenné týmy</strong> 🎉</p>
+</li>
+	
+      </ul>
+  </div></div>   
+  
+  <div class="box" id="box4"><div class="box-element">
+      <h2>Proč?</h2>
+      <ul class="box-ul">
+	
+	<li><p><strong>Geometrie</strong> je zábava 😇</p>
+</li>
+	
+	<li><p>A ještě lepší <strong>ve dvojici</strong> 🥰</p>
+</li>
+	
+      </ul>
+  </div></div>   
+  
+</div>
+
+<div class="big-button-wrapper">
+  <a href="https://duogeo.cz/current/" class="big-button">Zaregistruj svůj tým!</a>
+</div>
+
+<div class="colored-bg">
+  <div class="flex bottom-info">
+    
+    <div class="box"><div class="box-element">
+	<p>Pro podrobnější informace si prečti sekci <a href="/rules">O soutěži</a>.</p>
+
+    </div></div>
+    
+    <div class="box"><div class="box-element">
+	<p>Pokud máš další otázky, <a href="/contact">kontaktuj</a> kohokoli z nás.</p>
+
+    </div></div>
+    
+    <div class="box"><div class="box-element">
+	<p>Nevíš, co čekat? Podívej se na <a href="/archive">minulé ročníky</a>.</p>
+
+    </div></div>
+    
+    <div class="box"><div class="box-element">
+	<p>Máme <a rel="external" href="https://discord.gg/GZJjCvTVwJ">Discord</a>, tak se neváhej připojit!</p>
+
+    </div></div>
+    
+  </div>
+</div>
+
+<h2>Soutěž vznikla ve spolupráci s</h2>
+<div class="flex logos">
+  <div class="box-element">
+    <p><a href="https://www.matematickaolympiada.cz/">
+	<img src="https://duogeo.cz/mo.svg" class="logo" style="width:100%">
+    </a></p>
+  </div>
+  <div class="box-element">
+    <p><a href="https://skmo.sk/">
+	<img src="https://duogeo.cz/skmo.png" class="logo" style="width:100%">
+    </a></p>
+  </div>
+  <div class="box-element spoko-div">
+    <a href="http://spoko.one/">SpoKo – Spolek korespondečních seminářů</a>
+  </div>
+</div>  
+
+    </div>    
+  </body>
+</html>

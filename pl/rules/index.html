@@ -1,0 +1,131 @@
+
+
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuoGeo</title>
+    <link rel="icon" type="image/png" href="https://duogeo.cz/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/variables.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-menu.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-logo.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-general.css?v=1.3">
+    <link rel="stylesheet" type="text/css" href="/css/styles-form.css?v=1.3">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css" integrity="sha384-7lU0muIg/i1plk7MgygDUp3/bNRA65orrBub4/OSWHECgwEsY83HaS1x3bljA/XV" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.js" integrity="sha384-RdymN7NRJ+XoyeRY4185zXaxq9QWOOx3O7beyyrRK4KQZrPlCDQQpCu95FoCGPAE" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"        
+	    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+  </head>
+  <body>
+    <nav id="menu-bar">
+      <div id="languages">
+        
+        
+        <a class="lang-link" href="https://duogeo.cz/rules/">
+          <img src="https://duogeo.cz/flags/cz.svg" style="height:1.5em;width:100%">
+        </a>
+        
+        <a class="lang-link" href="https://duogeo.cz/en/rules/">
+          <img src="https://duogeo.cz/flags/gb.svg" style="height:1.5em;width:100%">
+        </a>
+        
+        <a class="lang-link" href="https://duogeo.cz/pl/rules/">
+          <img src="https://duogeo.cz/flags/pl.svg" style="height:1.5em;width:100%">
+        </a>
+        	  
+      </div>
+      <input type="checkbox" name="menu-button" id="menu-button">
+      <script>
+	function closemenu()
+	{
+	    document.getElementById("menu-button").checked = false;
+	}
+      </script>
+      <div id="overlay" onclick="closemenu()"></div>
+      <div></div>
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul id="menu-list">
+        <li><a class="menu-group" href="https://duogeo.cz/pl/">
+            <p>Strona główna</p>
+        </a></li>
+	      <li><a class="menu-group" href="https://duogeo.cz/pl/rules/">
+            <p>O nas</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/pl/current/">
+            <p>Bieżąca edycja</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/pl/archive/">
+            <p>Poprzednie lata</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/pl/contact/">
+            <p>Kontakt</p>
+        </a></li>
+      </ul>
+    </nav>
+    
+    <div id="strip">
+      <div id="strip-left"></div>
+      <div id="strip-logo"></div>
+      <div id="strip-right"></div>
+    </div>
+
+    <div id="page">
+      
+<div id="page-left">
+  <h2 id="ogolne-informacje">Ogólne informacje</h2>
+<ul>
+<li>Konkurs podzielony jest na dwie kategorie: <strong>junior</strong> dla uczniów szkół podstawowych i <strong>senior</strong> dla uczniów szkół ponadpodstawowych.</li>
+<li>W konkursie może brać udział każdy uczeń w odpowiednio przypisanej kategorii, jak wyżej.</li>
+<li>Konkurs odbywa się wyłącznie stacjonarnie we wskazanych przez organizatorów miejscach. Udział zdalny nie jest możliwy.</li>
+<li>Zadania rozwiązuje się w parach. Jeśli chcesz się zapisać, ale nie masz pary - napisz do nas.</li>
+<li>W obu kategoriach arkusz zawiera <strong>6 zadań</strong> uporządkowanych rosnąco względem ich trudności, jednak należy pamiętać, że ocena trudności jest subiektywna.</li>
+<li>Za każde zadanie można zdobyć maksymalnie <strong>6 punktów</strong>.</li>
+<li>Na rozwiązanie zadań przewidziano <strong>5 godzin</strong>.</li>
+<li>Zadania są typowo olimpijskimi problemami. W kategorii <strong>junior</strong> są zadania głównie <strong>obliczeniowe</strong>, a w w kategorii <strong>senior</strong> głównie oparte na <strong>dowodzeniu</strong>.</li>
+</ul>
+<p>Oto przykładowe zadanie na średnim poziomie trudności w kategorii <strong>junior</strong>:</p>
+<p class="problem-box">
+  W trójkącie równobocznym $ABC$ o boku długości $8\,\text{cm}$, punkt $D$ to środek boku $BC$, a punkt $E$ to środek boku $AC$. Punkt $F$ wybrano na prostej $BC$ w taki sposób, że pole trójkąta $ABF$ jest równe polu czworokąta $ABDE$. Oblicz długość odcinka $BF$.
+</p>
+<p>Oto przykładowe zadanie na średnim poziomie trudności w kategorii <strong>senior</strong>:</p>
+<p class="problem-box">
+  Dany jest trójkąt ostrokatny $ABC$. Na prostej $BC$ obrano takie punkty $P$ i $Q$, że $|AB| = |BP|$, $|AC| = |CQ|$ oraz $P$, $B$, $C$, $Q$ leżą w tej kolejności.
+Niech $J$ to środek okręgu dopisanego do trójkąta $ABC$ stycznego do boku $BC$, a $D$ i $E$ to punkty styczności tego okręgu do prostych $AB$ i $AC$, odpowiednio.
+Załóżmy, że proste $DP$ i $EQ$ przecinają się w punkcie $F \neq J$ leżącym bliżej $D$ niż $P$ i bliżej $E$ niż $Q$. Udowodnij, że $AF \perp FJ$.
+</p>
+<h2 id="regulamin-konkursu">Regulamin konkursu</h2>
+<ul>
+<li>Podczas początkowych 30 minut wolno zadawać pytania dotyczące treści zadań.</li>
+<li>Drużyny rozwiązują zadania w jednym lub więcej pokojach. Należy szanować pozostałych zawodników: nie wolno im przeszkadzać, komunikować się z innymi drużynami, ale podsłuchiwać ich rozmów.</li>
+<li>Dozwolona jest pełna komunikacja wewnątrz drużyny, np. przekazywanie przyborów, notatek, rozmowa o zadaniach, itd.</li>
+<li>Rozwiązanie każdego zadania należy napisać na osobnej kartce papieru, ponumerować każdą z nich, jeśli jest ich więcej (napisać wówczas łączną liczbę kartek oddanych do zadania na pierwszej stronie rozwiązania) oraz podpisać je nazwą drużyny.</li>
+<li>Na koniec zawodów należy posortować kartki z rozwiązaniami oraz sprawdzić poprawność ich numeracji.</li>
+<li>Jeśli istnieje zadanie, do którego drużyna nie chce oddać żadnego rozwiązania należy <strong>oddać pustą kartkę</strong> opisaną jak powyżej (w ten sposób organizatorzy mają pewność, że żadne rozwiązanie się nie zagubiło).</li>
+<li>Każda drużyna otrzyma zestaw zadań, kartki, na których należy napisać rozwiązania oraz wystarczającą liczbę kartek brudnopisu (chociaż w razie potrzeby można poprosić o więcej).</li>
+<li>Podczas zawodów <strong>dozwolone</strong> są następujące pomoce:
+<ul>
+<li>Przybory do pisania i rysowania (w tym kątomierz).</li>
+<li>Jedzenie oraz picie.</li>
+<li>Zegarki mechaniczne.</li>
+</ul>
+</li>
+<li>Podczas zawodów szczególnie <strong>zabronione</strong> są:
+<ul>
+<li>Wszystkie urządzenia elektroniczne, w tym kalkulatory (można mieć je wyłączone i schowane w plecaku).</li>
+<li>Wszelkiego rodzaju książki, notatki, tablice wzorów, suwaki logarytmiczne.</li>
+<li>Własne kartki papieru (np. papier "w kratkę", czy "w linie").</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+    </div>    
+  </body>
+</html>

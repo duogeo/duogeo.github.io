@@ -1,0 +1,2417 @@
+
+
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuoGeo</title>
+    <link rel="icon" type="image/png" href="https://duogeo.cz/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/variables.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-menu.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-logo.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-general.css?v=1.3">
+    <link rel="stylesheet" type="text/css" href="/css/styles-form.css?v=1.3">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css" integrity="sha384-7lU0muIg/i1plk7MgygDUp3/bNRA65orrBub4/OSWHECgwEsY83HaS1x3bljA/XV" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.js" integrity="sha384-RdymN7NRJ+XoyeRY4185zXaxq9QWOOx3O7beyyrRK4KQZrPlCDQQpCu95FoCGPAE" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"        
+	    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+  </head>
+  <body>
+    <nav id="menu-bar">
+      <div id="languages">
+        
+        
+        <a class="lang-link" href="https://duogeo.cz/current/">
+          <img src="https://duogeo.cz/flags/cz.svg" style="height:1.5em;width:100%">
+        </a>
+        
+        <a class="lang-link" href="https://duogeo.cz/en/current/">
+          <img src="https://duogeo.cz/flags/gb.svg" style="height:1.5em;width:100%">
+        </a>
+        
+        <a class="lang-link" href="https://duogeo.cz/pl/current/">
+          <img src="https://duogeo.cz/flags/pl.svg" style="height:1.5em;width:100%">
+        </a>
+        	  
+      </div>
+      <input type="checkbox" name="menu-button" id="menu-button">
+      <script>
+	function closemenu()
+	{
+	    document.getElementById("menu-button").checked = false;
+	}
+      </script>
+      <div id="overlay" onclick="closemenu()"></div>
+      <div></div>
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul id="menu-list">
+        <li><a class="menu-group" href="https://duogeo.cz/pl/">
+            <p>Strona główna</p>
+        </a></li>
+	      <li><a class="menu-group" href="https://duogeo.cz/pl/rules/">
+            <p>O nas</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/pl/current/">
+            <p>Bieżąca edycja</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/pl/archive/">
+            <p>Poprzednie lata</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/pl/contact/">
+            <p>Kontakt</p>
+        </a></li>
+      </ul>
+    </nav>
+    
+    <div id="strip">
+      <div id="strip-left"></div>
+      <div id="strip-logo"></div>
+      <div id="strip-right"></div>
+    </div>
+
+    <div id="page">
+      
+
+<div id="page-left">
+  <h2 id="zadania">Zadania</h2>
+<p>Problemy z kategorii podstawowej: <a href="/zadani/2026/ZS-CZ.pdf">CZ</a> <a href="/zadani/2026/ZS-SK.pdf">SK</a> <a href="/zadani/2026/ZS-PL.pdf">PL</a> <a href="/zadani/2026/ZS-EN.pdf">EN</a></p>
+<p>Oficjalne rozwiązania, obecnie tylko w języku czeskim i angielskim: <a href="/zadani/2026/ZS-CZ-Solutions.pdf">CZ</a> <a href="/zadani/2026/ZS-EN-Solutions.pdf">EN</a></p>
+<p>Problemy z kategorii ponadpodstawowej: <a href="/zadani/2026/SS-CZ.pdf">CZ</a> <a href="/zadani/2026/SS-SK.pdf">SK</a> <a href="/zadani/2026/SS-PL.pdf">PL</a> <a href="/zadani/2026/SS-HR.pdf">HR</a>  <a href="/zadani/2026/SS-EN.pdf">EN</a></p>
+<p>Oficjalne rozwiązania, obecnie tylko w języku czeskim i angielskim: <a href="/zadani/2026/SS-CZ-Solutions.pdf">CZ</a> <a href="/zadani/2026/SS-EN-Solutions.pdf">EN</a></p>
+<h2 id="biezaca-edycja">Bieżąca edycja</h2>
+<p>Liczba miejsc w każdym mieście jest ograniczona.</p>
+<p>Zawody dla szkół <strong>podstawowych odbędą</strong> się w piątek <strong>16.1.2026</strong> od godziny <strong>11:00 do 15:00</strong>.</p>
+<p>Zawody dla szkół <strong>ponadpodstawowych odbędą</strong> się w piątek <strong>23.1.2026</strong> od godziny <strong>11:00 do 16:00</strong>.</p>
+<p>W <strong>Pradze</strong> miejsce zawodów to MS MFF UK, <strong>Malostranské náměstí 2/25, 118 00 Praha 1</strong>.</p>
+<p>W <strong>Bratysławie</strong> miejsce zawodów to FMFI UK, <strong>Mlynská dolina pavilon F1, 842 48 Bratislava</strong>.</p>
+<p>W <strong>Krakowie</strong> miejsce zawodów to WMiI UJ, <strong>ul. Prof. S. Łojasiewicza 6, 30-348 Kraków</strong>.</p>
+<p>W <strong>Chorwacji</strong> miejscem zawodów jest <strong>Zagrzeb</strong>. Dokładne miejsce zostanie określone później.</p>
+<h2 id="results-for-the-high-school-category-czech-and-slovak-republic">Results for the High School category - Czech and Slovak Republic</h2>
+<table class="tym-table">
+  <tr>
+    <th></th>
+    <th>Drużyna</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>Suma</th>
+  </tr>
+  <tr>
+  <td>1.-3.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Jakub Trčka</div><div>Veronika Menšíková</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>36</td>
+  </tr>
+  <tr>
+  <td>1.-3.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Lucian Poljak</div><div>Lukáš Komín</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>36</td>
+  </tr>
+  <tr>
+  <td>1.-3.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Matej Bachniček</div><div>Richard Dudek</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>36</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Pavel Hyánek</div><div>Tomáš Pazourek</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>30</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Jan Bradáč</div><div>Martin Pospíšil</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>3</td>
+  <td>2</td>
+  <td>28</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Miriam Barešová</div><div>Milan Dvořák</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>4</td>
+  <td>0</td>
+  <td>27</td>
+  </tr>
+  <tr>
+  <td>7.-9.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Rudolf Krzystek</div><div>Gregor Kalický</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>1</td>
+  <td>25</td>
+  </tr>
+  <tr>
+  <td>7.-9.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Jan Dubišár</div><div>Jakub Toupal</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>6</td>
+  <td>0</td>
+  <td>25</td>
+  </tr>
+  <tr>
+  <td>7.-9.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Alexander Nagy</div><div>Alexander Marcian</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>6</td>
+  <td>0</td>
+  <td>25</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Simon Svrček</div><div>Alex Markus</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>24</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Emma Ganobčíková</div><div>Igor Vargovič</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>23</td>
+  </tr>
+  <tr>
+  <td>12.-13.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Richard Semanišin</div><div>Marko Vasiľ</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>6</td>
+  <td>2</td>
+  <td>1</td>
+  <td>2</td>
+  <td>22</td>
+  </tr>
+  <tr>
+  <td>12.-13.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Eliška Jűstelová*</div><div>Jakub Thomitzek*</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>3</td>
+  <td>0</td>
+  <td>22</td>
+  </tr>
+  <tr>
+  <td>14.-16.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Petr Starý</div><div>Michael Ambros</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>3</td>
+  <td>0</td>
+  <td>21</td>
+  </tr>
+  <tr>
+  <td>14.-16.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Štěpán Sikora</div><div>Dan Školař</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>3</td>
+  <td>0</td>
+  <td>21</td>
+  </tr>
+  <tr>
+  <td>14.-16.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Vladislav Bredikhin</div><div>Martin Šnejdar</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>3</td>
+  <td>0</td>
+  <td>21</td>
+  </tr>
+  <tr>
+  <td>17.-18.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Rudolf Kusý</div><div>Tomáš Kodaj</div></div></td>
+  <td>5</td>
+  <td>4</td>
+  <td>2</td>
+  <td>6</td>
+  <td>3</td>
+  <td>0</td>
+  <td>20</td>
+  </tr>
+  <tr>
+  <td>17.-18.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Martin Franek</div><div>Patrik Franek</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+  <td>20</td>
+  </tr>
+  <tr>
+  <td>19.-27.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Klára Vidnerová</div><div>Barbora Bíklová</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>19</td>
+  </tr>
+  <tr>
+  <td>19.-27.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Jaroslav Pleticha</div><div>Johana Černá</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>19</td>
+  </tr>
+  <tr>
+  <td>19.-27.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Petr Karlík</div><div>Martin Vagner</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>19</td>
+  </tr>
+  <tr>
+  <td>19.-27.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Viktor Drábek</div><div>Jan Tichon</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>19</td>
+  </tr>
+  <tr>
+  <td>19.-27.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Alena Bálintová</div><div>Nina Anna Betáková</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>19</td>
+  </tr>
+  <tr>
+  <td>19.-27.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Martin Vrba</div><div>Michal Ferdinandy</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>19</td>
+  </tr>
+  <tr>
+  <td>19.-27.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Samuel Šandor</div><div>Filip Sluk</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>19</td>
+  </tr>
+  <tr>
+  <td>19.-27.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Tomáš Zuzík</div><div>Tomáš Černý</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  <td>19</td>
+  </tr>
+  <tr>
+  <td>19.-27.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Michal Vodička</div><div>Boris Köröš</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>19</td>
+  </tr>
+  <tr>
+  <td>28.-37.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Albert Dolejš</div><div>Anna Vorlíčková</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>28.-37.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Jindřich Heissiger</div><div>Lukáš Franta</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>28.-37.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Tomáš Mácha</div><div>Jan Beran</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>28.-37.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Radovan Koukal</div><div>Vojtěch Bočan</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>28.-37.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Magdalena Nováková</div><div>Filip Strojil</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>28.-37.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Jana Fišerová</div><div>Mai Tran</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>28.-37.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Lukáš Vítek</div><div>Daniel Nejezchleba</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>28.-37.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Filip Krafčík</div><div>Samuel Poláček</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>28.-37.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Patrik Vrba</div><div>Maksym Slivinskyi</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>28.-37.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Juraj Patko</div><div>Tobiáš Šipöcz</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>38.-40.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Alexander Košťál</div><div>Monika Žujová</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>5</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>17</td>
+  </tr>
+  <tr>
+  <td>38.-40.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Lívia Lukáčová</div><div>Jakub Stramba</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>17</td>
+  </tr>
+  <tr>
+  <td>38.-40.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Kseniya Khmialiarskaya</div><div>Zuzana Kovárová</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>17</td>
+  </tr>
+  <tr>
+  <td>41.-47.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Ema Vlková</div><div>Ondřej Engel</div></div></td>
+  <td>6</td>
+  <td>4</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>16</td>
+  </tr>
+  <tr>
+  <td>41.-47.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Veronika Mašíčková</div><div>Rozárka Michálková</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>4</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>16</td>
+  </tr>
+  <tr>
+  <td>41.-47.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Jan Betinec</div><div>Jan Grösl</div></div></td>
+  <td>6</td>
+  <td>4</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>16</td>
+  </tr>
+  <tr>
+  <td>41.-47.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Vít Jiří Houfek</div><div>Nina Naxerová</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>4</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>16</td>
+  </tr>
+  <tr>
+  <td>41.-47.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Teodor Malaschitz</div><div>Stefan Mikulaj</div></div></td>
+  <td>4</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>16</td>
+  </tr>
+  <tr>
+  <td>41.-47.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Alžbeta Nagyová</div><div>Dominik Kubiš</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>4</td>
+  <td>0</td>
+  <td>16</td>
+  </tr>
+  <tr>
+  <td>41.-47.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Šárka Macáková</div><div>Petra Čobrdová</div></div></td>
+  <td>3</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  <td>16</td>
+  </tr>
+  <tr>
+  <td>48.-51.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Martin Zeman</div><div>Jan Rakušan</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>3</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>15</td>
+  </tr>
+  <tr>
+  <td>48.-51.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Petra Strážnická</div><div>Martin Dostál</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  <td>15</td>
+  </tr>
+  <tr>
+  <td>48.-51.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Nina Hudakova</div><div>Marketa Dlugosova</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>4</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>15</td>
+  </tr>
+  <tr>
+  <td>48.-51.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Magdaléna Gališová*</div><div>Eva Martikánová*</div></div></td>
+  <td>6</td>
+  <td>4</td>
+  <td>5</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>15</td>
+  </tr>
+  <tr>
+  <td>52.-56.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Michael Jarvis</div><div>Stanislav Tesař</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>14</td>
+  </tr>
+  <tr>
+  <td>52.-56.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Lukáš Lev</div><div>Jan Zázvorka</div></div></td>
+  <td>4</td>
+  <td>4</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>14</td>
+  </tr>
+  <tr>
+  <td>52.-56.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Janka Urbánová</div><div>Eva Krajčiová</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>14</td>
+  </tr>
+  <tr>
+  <td>52.-56.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Matej Makyta</div><div>Gregor Tichý</div></div></td>
+  <td>4</td>
+  <td>4</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>14</td>
+  </tr>
+  <tr>
+  <td>52.-56.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Klárka Bírová</div><div>Lea Gašparová</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>14</td>
+  </tr>
+  <tr>
+  <td>57.-61.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Mikuláš Nácovský</div><div>Daniel Vévoda</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>13</td>
+  </tr>
+  <tr>
+  <td>57.-61.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Tomáš Zatloukal</div><div>Šimon Swaczyna</div></div></td>
+  <td>0</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  <td>13</td>
+  </tr>
+  <tr>
+  <td>57.-61.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Martin Kamendy</div><div>Marek Dulák</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>13</td>
+  </tr>
+  <tr>
+  <td>57.-61.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Marek Nedeljak</div><div>Samuel Dybala</div></div></td>
+  <td>6</td>
+  <td>5</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>13</td>
+  </tr>
+  <tr>
+  <td>57.-61.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Timotej Fleško</div><div>Ivana Máčajová</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>13</td>
+  </tr>
+  <tr>
+  <td>62.-72.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Vít Kupilík</div><div>Jan Kováč</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>62.-72.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Marek Sovják</div><div>Adrian Bobro</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>62.-72.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Robin Tesař</div><div>Tereza Kubínová</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>62.-72.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Anežka Ježková</div><div>Josef Barták</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>62.-72.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Linda Petraturová</div><div>Kateřina Hujová</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>62.-72.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Karolína Mihaliková</div><div>Michal Hudák</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>62.-72.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Ján Totka</div><div>Ján Rajňák</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>62.-72.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Martin Domány</div><div>Filip Hladík</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>62.-72.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Rebeka Lamošová</div><div>Samuel Vlček</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>62.-72.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Šimon Lukačín</div><div>Daniel Ryan Takáč</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>62.-72.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Richard Futáš</div><div>Adam Horváth</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>73.-77.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Vojtěch Kolenatý</div><div>Šárka Kolenatá</div></div></td>
+  <td>6</td>
+  <td>5</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>11</td>
+  </tr>
+  <tr>
+  <td>73.-77.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Patrik Sova</div><div>Lukáš Vojtík</div></div></td>
+  <td>4</td>
+  <td>1</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>11</td>
+  </tr>
+  <tr>
+  <td>73.-77.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Jovan Jovanović</div><div>Petr Herman</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>11</td>
+  </tr>
+  <tr>
+  <td>73.-77.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Teo Petróczy</div><div>Terézia Bratková</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>11</td>
+  </tr>
+  <tr>
+  <td>73.-77.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Adéla Žídková*</div><div>Klára Labašová*</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>11</td>
+  </tr>
+  <tr>
+  <td>78.-81.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Eduard Bolina</div><div>Teodor Pajůrek</div></div></td>
+  <td>6</td>
+  <td>3</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>10</td>
+  </tr>
+  <tr>
+  <td>78.-81.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Matěj Najman</div><div>Viktor Jašek</div></div></td>
+  <td>4</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>10</td>
+  </tr>
+  <tr>
+  <td>78.-81.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Lara Bošanská</div><div>Lola Kontrová</div></div></td>
+  <td>4</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>10</td>
+  </tr>
+  <tr>
+  <td>78.-81.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Kroutil*</div><div>Dušek*</div></div></td>
+  <td>5</td>
+  <td>5</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>10</td>
+  </tr>
+  <tr>
+  <td>82.-84.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>David Čepička</div><div>Herbert Pohl</div></div></td>
+  <td>4</td>
+  <td>3</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>9</td>
+  </tr>
+  <tr>
+  <td>82.-84.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Ivan Popov</div><div>Florián Pokorný</div></div></td>
+  <td>6</td>
+  <td>3</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>9</td>
+  </tr>
+  <tr>
+  <td>82.-84.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Natálie Bortlíková*</div><div>Karin Kalavská*</div></div></td>
+  <td>5</td>
+  <td>4</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>9</td>
+  </tr>
+  <tr>
+  <td>85.-87.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Radoslava Bohušová</div><div>Timotej Šranko</div></div></td>
+  <td>6</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>8</td>
+  </tr>
+  <tr>
+  <td>85.-87.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Vít Bouchala*</div><div>Daniel Půda*</div></div></td>
+  <td>4</td>
+  <td>4</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>8</td>
+  </tr>
+  <tr>
+  <td>85.-87.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Dominika Šiller*</div><div>Valérie Kropáčová*</div></div></td>
+  <td>4</td>
+  <td>4</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>8</td>
+  </tr>
+  <tr>
+  <td>88</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Mykola Halenko</div><div>Peter Kotuliak</div></div></td>
+  <td>5</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>7</td>
+  </tr>
+  <tr>
+  <td>89.-91.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Bartoloměj Zvánovec</div><div>Michael Stein</div></div></td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>89.-91.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Jindřich Kraina</div><div>Patrik Baier</div></div></td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>89.-91.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Samuel Halaš</div><div>Guido Ginoux</div></div></td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>92</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Linda Šolcová</div><div>Rut Patočková</div></div></td>
+  <td>2</td>
+  <td>3</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>5</td>
+  </tr>
+  <tr>
+  <td>93</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Katarína Meltzerová</div><div>Filip Štefko</div></div></td>
+  <td>4</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>4</td>
+  </tr>
+  <tr>
+  <td>94.-96.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Richard Fotul</div><div>gabs</div></div></td>
+  <td>0</td>
+  <td>3</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>3</td>
+  </tr>
+  <tr>
+  <td>94.-96.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Kristína Králová</div><div>Tomáš Halabuk</div></div></td>
+  <td>0</td>
+  <td>3</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>3</td>
+  </tr>
+  <tr>
+  <td>94.-96.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Lucie Bachová*</div><div>Adina Wenzelová*</div></div></td>
+  <td>0</td>
+  <td>3</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>3</td>
+  </tr>
+  <tr>
+  <td>97.-99.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Filip Meller</div><div>David Matoušek</div></div></td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>2</td>
+  </tr>
+  <tr>
+  <td>97.-99.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Baier*</div><div>Kohoutek*</div></div></td>
+  <td>0</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>2</td>
+  </tr>
+  <tr>
+  <td>97.-99.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Lucie Kubná*</div><div>Jakub Zahel*</div></div></td>
+  <td>0</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>2</td>
+  </tr>
+  <tr>
+  <td>100.-101.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Branislav Duda</div><div>Martin Dubnička</div></div></td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  </tr>
+  <tr>
+  <td>100.-101.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Dominika Králová</div><div>Andrej Jacko</div></div></td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  </tr>
+  <tr>
+  <td>102.-103.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Ema Bukovinská</div><div>Tereza Tejbusová</div></div></td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  </tr>
+  <tr>
+  <td>102.-103.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Nela Janurová</div><div>George Gramblička</div></div></td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  </tr>
+</table>
+<p>*The results list includes unofficial teams competing in Opava, marked with an asterisk, where we tested the possibility of a new competition place.</p>
+<h2 id="results-for-the-high-school-category-poland">Results for the High School category - Poland</h2>
+<table class="tym-table">
+  <tr>
+    <th></th>
+    <th>Drużyna</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>Suma</th>
+  </tr>
+  <tr>
+  <td>1.-6.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Mariia Kulyk</div><div>Piotr Magolan</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>36</td>
+  </tr>
+  <tr>
+  <td>1.-6.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Antoni Mazur</div><div>Julian Kapustka</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>36</td>
+  </tr>
+  <tr>
+  <td>1.-6.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Mateusz Miernik</div><div>Robert Rośczak</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>36</td>
+  </tr>
+  <tr>
+  <td>1.-6.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Wojciech Kisała</div><div>Diana Tracz</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>36</td>
+  </tr>
+  <tr>
+  <td>1.-6.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Jan Kosiorowski</div><div>Michał Oprocha</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>36</td>
+  </tr>
+  <tr>
+  <td>1.-6.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Wiktoria Bolka</div><div>Marek Hadam</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>36</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Jakub Świcarz</div><div>Maria Janyska</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>31</td>
+  </tr>
+  <tr>
+  <td>8.-11.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Radosław Kuras</div><div>Bartosz Kotwicki</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>30</td>
+  </tr>
+  <tr>
+  <td>8.-11.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Jan Sałkowski</div><div>Jakub Setnik</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>30</td>
+  </tr>
+  <tr>
+  <td>8.-11.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Franciszek Parma</div><div>Rafał Kubień</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>30</td>
+  </tr>
+  <tr>
+  <td>8.-11.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Marek Konieczny</div><div>Antonina Pajek</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>30</td>
+  </tr>
+  <tr>
+  <td>12</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Rafał Karpiński</div><div>Maciej Dębski</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>29</td>
+  </tr>
+  <tr>
+  <td>13.-14.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Krzysztof Maszczyński</div><div>Małgorzata Kowalik</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>6</td>
+  <td>0</td>
+  <td>25</td>
+  </tr>
+  <tr>
+  <td>13.-14.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Maria Bażęcka</div><div>Stanisław Kozłowski</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>25</td>
+  </tr>
+  <tr>
+  <td>15.-16.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Michał Gawron</div><div>Oskar Adamczyk</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>24</td>
+  </tr>
+  <tr>
+  <td>15.-16.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Jakub Dębowski</div><div>Piotr Wesołowski</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>24</td>
+  </tr>
+  <tr>
+  <td>17.-18.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Karol Arciszewski</div><div>Stanisław Pisarski</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>5</td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>23</td>
+  </tr>
+  <tr>
+  <td>17.-18.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Mikołaj Badura</div><div>Kamil Lach</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>23</td>
+  </tr>
+  <tr>
+  <td>19.-24.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Artur Mądrala</div><div>Bartosz Datka</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>19.-24.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Matylda Zięba</div><div>Oliwia Pszona</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>19.-24.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Borys Dębowski</div><div>Karol Krech</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>19.-24.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Konrad Kręcisz</div><div>Wojciech Dorf</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>19.-24.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Filip Soboń</div><div>Paulina Klyta</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>19.-24.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Szymon Rynkiewicz</div><div>Krzysztof Stec</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>25.-27.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Antoni Moskal</div><div>Filip Ćwięka</div></div></td>
+  <td>5</td>
+  <td>5</td>
+  <td>5</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>17</td>
+  </tr>
+  <tr>
+  <td>25.-27.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Piotr Grądziel</div><div>Kacper Chabowski</div></div></td>
+  <td>6</td>
+  <td>5</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>17</td>
+  </tr>
+  <tr>
+  <td>25.-27.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Błażej Głowiak</div><div>Jakub Bartoszek</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>17</td>
+  </tr>
+</table>
+<h2 id="results-for-the-high-school-category-croatia">Results for the High School category - Croatia</h2>
+<table class="tym-table">
+  <tr>
+    <th></th>
+    <th>Drużyna</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>Suma</th>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td><div class="tym-vysledky"><img src="/flags/hr.svg"><div>Martin Vidović</div><div>Lovro Kličković</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>36</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td><div class="tym-vysledky"><img src="/flags/hr.svg"><div>Ivan Markić</div><div>Toni Bartolić</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>3</td>
+  <td><div class="tym-vysledky"><img src="/flags/hr.svg"><div>Borna Planinić</div><div>Leona Ozimin Ptiček</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td><div class="tym-vysledky"><img src="/flags/hr.svg"><div>Mara Franić</div><div>Sara Brozinčević</div></div></td>
+  <td>6</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>8</td>
+  </tr>
+</table>
+<h2 id="results-for-the-elementary-category-czech-and-slovak-republic">Results for the Elementary category - Czech and Slovak Republic</h2>
+<table class="tym-table">
+  <tr>
+    <th></th>
+    <th>Drużyna</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>Suma</th>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Richard Semanišin</div><div>Marko Vasiľ</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>2</td>
+  <td>32</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Lukas Bystrický</div><div>Matej Vaško</div></div></td>
+  <td>6</td>
+  <td>4</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>28</td>
+  </tr>
+  <tr>
+  <td>3</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Richard Futáš</div><div>Adam Horváth</div></div></td>
+  <td>6</td>
+  <td>4</td>
+  <td>6</td>
+  <td>6</td>
+  <td>4</td>
+  <td>1</td>
+  <td>27</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Jakub Fišer</div><div>Ondřej Kostka</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>4</td>
+  <td>4</td>
+  <td>0</td>
+  <td>26</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Filip Feher</div><div>Jakub Jančiga</div></div></td>
+  <td>5</td>
+  <td>5</td>
+  <td>6</td>
+  <td>4</td>
+  <td>4</td>
+  <td>0</td>
+  <td>24</td>
+  </tr>
+  <tr>
+  <td>6.-8.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Valentýna Sochorová</div><div>Lukáš Zacpal</div></div></td>
+  <td>6</td>
+  <td>5</td>
+  <td>6</td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>23</td>
+  </tr>
+  <tr>
+  <td>6.-8.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Adam Holák</div><div>Richard Chmúrny</div></div></td>
+  <td>6</td>
+  <td>4</td>
+  <td>6</td>
+  <td>3</td>
+  <td>4</td>
+  <td>0</td>
+  <td>23</td>
+  </tr>
+  <tr>
+  <td>6.-8.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Timo Hajdu</div><div>Tomáš Urmanič</div></div></td>
+  <td>6</td>
+  <td>4</td>
+  <td>6</td>
+  <td>3</td>
+  <td>4</td>
+  <td>0</td>
+  <td>23</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Filip Kučerík</div><div>Zuzana Pethő</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>4</td>
+  <td>0</td>
+  <td>22</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Vojtěch Kotrbáček</div><div>Stanislav Moravec</div></div></td>
+  <td>6</td>
+  <td>5</td>
+  <td>6</td>
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+  <td>19</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Julie Malijevská</div><div>Anna Urbanová</div></div></td>
+  <td>6</td>
+  <td>3</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>3</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>12.-14.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>David Hajný</div><div>Šimon Zeman</div></div></td>
+  <td>6</td>
+  <td>4</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>17</td>
+  </tr>
+  <tr>
+  <td>12.-14.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Alica Bágeľová</div><div>Elena Mikušová</div></div></td>
+  <td>6</td>
+  <td>4</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>17</td>
+  </tr>
+  <tr>
+  <td>12.-14.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Michal Hudák</div><div>Karolína Mihaliková</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>3</td>
+  <td>17</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Ruslan Ibragimov</div><div>Adam Urx</div></div></td>
+  <td>6</td>
+  <td>5</td>
+  <td>2</td>
+  <td>0</td>
+  <td>2</td>
+  <td>0</td>
+  <td>15</td>
+  </tr>
+  <tr>
+  <td>16.-19.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Lukáš Dušek</div><div>Vít Kolář Levente</div></div></td>
+  <td>6</td>
+  <td>2</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>14</td>
+  </tr>
+  <tr>
+  <td>16.-19.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Václav Hybler</div><div>Tomáš Plichta</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>14</td>
+  </tr>
+  <tr>
+  <td>16.-19.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Oskar David</div><div>Kirill Sboev</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>14</td>
+  </tr>
+  <tr>
+  <td>16.-19.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Kušnievik</div><div>Lutsiv</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>14</td>
+  </tr>
+  <tr>
+  <td>20</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Adam Kadlec*</div><div>Sebastian Mlich*</div></div></td>
+  <td>6</td>
+  <td>1</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>13</td>
+  </tr>
+  <tr>
+  <td>21.-25.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Filip Balga</div><div>Tomáš Němec</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>21.-25.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Viktoriia Boyko</div><div>Ivana Kiselá</div></div></td>
+  <td>6</td>
+  <td>3</td>
+  <td>3</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>21.-25.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Teo Hvila</div><div>Ester Guzyová</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>21.-25.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Ondrej Mrážik</div><div>Jozef Zeleňák</div></div></td>
+  <td>6</td>
+  <td>4</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>2</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>21.-25.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Patrik Kanálik</div><div>Patrik Lehocký</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>26.-28.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Hana Kadeřábková</div><div>Marie Pawingerová</div></div></td>
+  <td>6</td>
+  <td>2</td>
+  <td>1</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>11</td>
+  </tr>
+  <tr>
+  <td>26.-28.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Adam Donát</div><div>František Homolka</div></div></td>
+  <td>5</td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>11</td>
+  </tr>
+  <tr>
+  <td>26.-28.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Richard Frolík</div><div>Jiří Vurm</div></div></td>
+  <td>6</td>
+  <td>2</td>
+  <td>2</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>11</td>
+  </tr>
+  <tr>
+  <td>29</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Jonáš Kracík*</div><div>Damien Lagarde*</div></div></td>
+  <td>6</td>
+  <td>4</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>10</td>
+  </tr>
+  <tr>
+  <td>30.-32.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Šimon Boček</div><div>Vojtěch Krčál</div></div></td>
+  <td>4</td>
+  <td>4</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>8</td>
+  </tr>
+  <tr>
+  <td>30.-32.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Petr Dvořák</div><div>Jan Rumánek</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>8</td>
+  </tr>
+  <tr>
+  <td>30.-32.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Filip Rosiar</div><div>Marek Žežula</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>2</td>
+  <td>8</td>
+  </tr>
+  <tr>
+  <td>33.-36.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Magdaléna Havlová</div><div>Sofie Paulovičová</div></div></td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>7</td>
+  </tr>
+  <tr>
+  <td>33.-36.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Kristýna Kolářová</div><div>Alžběta Zaňková</div></div></td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>7</td>
+  </tr>
+  <tr>
+  <td>33.-36.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Barbora Chudá</div><div>Lívia Kropuchová</div></div></td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>7</td>
+  </tr>
+  <tr>
+  <td>33.-36.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Andrea Hanšutová*</div><div>Adéla Staňková*</div></div></td>
+  <td>6</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>7</td>
+  </tr>
+  <tr>
+  <td>37.-49.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Dvořák</div><div>Jakubíček</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>37.-49.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Samuel Jurkiewicz</div><div>Marie Reitmayerová</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>37.-49.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Adéla Janáčková</div><div>Andrea Kolářová</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>37.-49.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Šimon Korvas</div><div>Daniel Podruh</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>37.-49.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Adam Haji</div><div>Makar Kryklyvenko</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>37.-49.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Sofia Grocholová</div><div>Jakub Rečičár</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>37.-49.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Filip Jerga</div><div>Martin Záremba</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>37.-49.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Matej Orosz</div><div>Artem Pivnenko</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>37.-49.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Oliver Hrivňák</div><div>Matej Stašák</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>37.-49.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Filip Komjáti</div><div>Zoran Pšenica</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>37.-49.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Barbora Fuchsíková*</div><div>Elen Pospíšilová*</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>37.-49.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Adam Gatnar*</div><div>Jan Krejčí*</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>37.-49.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Nina Benešová*</div><div>Terezie Heidrová*</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+  <tr>
+  <td>50.-52.</td>
+  <td><div class="tym-vysledky"><img src="/flags/sk.svg"><div>Mykhailo Jevhenijovyč Zemliakov</div><div>Lukáš Paulo</div></div></td>
+  <td>5</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>5</td>
+  </tr>
+  <tr>
+  <td>50.-52.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Václav Pavelek*</div><div>Mikuláš Rozsíval*</div></div></td>
+  <td>5</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>5</td>
+  </tr>
+  <tr>
+  <td>50.-52.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Zina Prastíková*</div><div>Sandra Chasáková*</div></div></td>
+  <td>4</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>5</td>
+  </tr>
+  <tr>
+  <td>53.-55.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Oliver Surovec</div><div>Sebastian Surovec</div></div></td>
+  <td>4</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>4</td>
+  </tr>
+  <tr>
+  <td>53.-55.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Elen Ružičková*</div><div>Michal Sedláček*</div></div></td>
+  <td>2</td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>4</td>
+  </tr>
+  <tr>
+  <td>53.-55.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Adam Kotyk*</div><div>Vojtěch Rinka*</div></div></td>
+  <td>4</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>4</td>
+  </tr>
+  <tr>
+  <td>56</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Martin Cestchaml*</div><div>Jonáš Jiří Šimeček*</div></div></td>
+  <td>3</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>3</td>
+  </tr>
+  <tr>
+  <td>57.-58.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Moutagová*</div><div>Smějová*</div></div></td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>2</td>
+  </tr>
+  <tr>
+  <td>57.-58.</td>
+  <td><div class="tym-vysledky"><img src="/flags/cz.svg"><div>Marek Krejčí*</div><div>Adam Šnajder*</div></div></td>
+  <td>2</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>2</td>
+  </tr>
+</table>
+<p>*The results list includes unofficial teams competing in Opava, marked with an asterisk, where we tested the possibility of a new competition place.</p>
+<h2 id="results-for-the-elementary-category-poland">Results for the Elementary category - Poland</h2>
+<table class="tym-table">
+  <tr>
+    <th></th>
+    <th>Drużyna</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>Suma</th>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Szymon Rynkiewicz</div><div>Mateusz Kaźmierczak</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>30</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Szymon Kmiotek</div><div>Piotr Kozak</div></div></td>
+  <td>5</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>4</td>
+  <td>4</td>
+  <td>25</td>
+  </tr>
+  <tr>
+  <td>3</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Stefan Kosior</div><div>Adam Kostrząb</div></div></td>
+  <td>6</td>
+  <td>2</td>
+  <td>6</td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>20</td>
+  </tr>
+  <tr>
+  <td>4.-7.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Kateryna Varusha</div><div>Julian Kozioł</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>4.-7.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Alicja Cukier</div><div>Klara Piwowarczyk</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>4.-7.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Zofia Kwinta</div><div>Jacek Furmańczyk</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>5</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>4.-7.</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Tymon Kołodziej</div><div>Maksim Karol</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Jan Wojciech Pydych</div><div>Adam Stanisław Wytrzyszczewski</div></div></td>
+  <td>6</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>3</td>
+  <td>15</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Zuzanna Furyk</div><div>Wiktor Halewski</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Aleksandra Herbut</div><div>Karyna Krutsko</div></div></td>
+  <td>5</td>
+  <td>0</td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>11</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Krzysztof Moląg</div><div>Jan Urbaniec</div></div></td>
+  <td>4</td>
+  <td>5</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>9</td>
+  </tr>
+  <tr>
+  <td>12</td>
+  <td><div class="tym-vysledky"><img src="/flags/pl.svg"><div>Franciszek Rynkar</div><div>Olivier Trocewicz</div></div></td>
+  <td>6</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>6</td>
+  </tr>
+</table>
+
+</div>
+
+
+    </div>    
+  </body>
+</html>
