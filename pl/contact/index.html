@@ -1,0 +1,324 @@
+
+
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuoGeo</title>
+    <link rel="icon" type="image/png" href="https://duogeo.cz/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/variables.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-menu.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-logo.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-general.css?v=1.3">
+    <link rel="stylesheet" type="text/css" href="/css/styles-form.css?v=1.3">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css" integrity="sha384-7lU0muIg/i1plk7MgygDUp3/bNRA65orrBub4/OSWHECgwEsY83HaS1x3bljA/XV" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.js" integrity="sha384-RdymN7NRJ+XoyeRY4185zXaxq9QWOOx3O7beyyrRK4KQZrPlCDQQpCu95FoCGPAE" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"        
+	    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+  </head>
+  <body>
+    <nav id="menu-bar">
+      <div id="languages">
+        
+        
+        <a class="lang-link" href="https://duogeo.cz/contact/">
+          <img src="https://duogeo.cz/flags/cz.svg" style="height:1.5em;width:100%">
+        </a>
+        
+        <a class="lang-link" href="https://duogeo.cz/en/contact/">
+          <img src="https://duogeo.cz/flags/gb.svg" style="height:1.5em;width:100%">
+        </a>
+        
+        <a class="lang-link" href="https://duogeo.cz/pl/contact/">
+          <img src="https://duogeo.cz/flags/pl.svg" style="height:1.5em;width:100%">
+        </a>
+        	  
+      </div>
+      <input type="checkbox" name="menu-button" id="menu-button">
+      <script>
+	function closemenu()
+	{
+	    document.getElementById("menu-button").checked = false;
+	}
+      </script>
+      <div id="overlay" onclick="closemenu()"></div>
+      <div></div>
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul id="menu-list">
+        <li><a class="menu-group" href="https://duogeo.cz/pl/">
+            <p>Strona główna</p>
+        </a></li>
+	      <li><a class="menu-group" href="https://duogeo.cz/pl/rules/">
+            <p>O nas</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/pl/current/">
+            <p>Bieżąca edycja</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/pl/archive/">
+            <p>Poprzednie lata</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/pl/contact/">
+            <p>Kontakt</p>
+        </a></li>
+      </ul>
+    </nav>
+    
+    <div id="strip">
+      <div id="strip-left"></div>
+      <div id="strip-logo"></div>
+      <div id="strip-right"></div>
+    </div>
+
+    <div id="page">
+      
+
+<div class="centerflex">
+  <div class="email-box">
+    <div class="contact">
+      <h2> Duogeo </h2>
+      <img src="https://duogeo.cz/flags/duogeo.svg">
+      <p>✉️&nbsp;<a href="mailto:info@duogeo.cz">info@duogeo.cz</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="flex">
+  
+  <div class="email-box">
+    <div class="contact">
+      <h2> Czech republic </h2>
+      <img src="https://duogeo.cz/flags/cz.svg">
+      <p>✉️&nbsp;<a href="mailto:info.cz@duogeo.cz">info.cz@duogeo.cz</a></p>
+    </div>
+</div>
+  
+  <div class="email-box">
+    <div class="contact">
+      <h2> Slovakia </h2>
+      <img src="https://duogeo.cz/flags/sk.svg">
+      <p>✉️&nbsp;<a href="mailto:info.sk@duogeo.cz">info.sk@duogeo.cz</a></p>
+    </div>
+</div>
+  
+  <div class="email-box">
+    <div class="contact">
+      <h2> Poland </h2>
+      <img src="https://duogeo.cz/flags/pl.svg">
+      <p>✉️&nbsp;<a href="mailto:info.pl@duogeo.cz">info.pl@duogeo.cz</a></p>
+    </div>
+</div>
+  
+  <div class="email-box">
+    <div class="contact">
+      <h2> Croatia </h2>
+      <img src="https://duogeo.cz/flags/hr.svg">
+      <p>✉️&nbsp;<a href="mailto:info.hr@duogeo.cz">info.hr@duogeo.cz</a></p>
+    </div>
+</div>
+  
+</div>
+
+
+<h2> Organizers </h2>
+<div class="flex">
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/pecho.webp" loading="lazy">
+    <div class="contact">
+      <h2> Michal Pecho </h2>
+      <p>✉️&nbsp;michalpecho19@gmail.com</p>
+       <p><b>Main organizer</b></p> 
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/radek.webp" loading="lazy">
+    <div class="contact">
+      <h2> Radek Olšák </h2>
+      <p>✉️&nbsp;radek@olsak.net</p>
+       <p><b>Main organizer</b></p> 
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/vitek.webp" loading="lazy">
+    <div class="contact">
+      <h2> Vít Hanika </h2>
+      <p>✉️&nbsp;vit.hanika@gmail.com</p>
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/patrik.webp" loading="lazy">
+    <div class="contact">
+      <h2> Patrik Bak </h2>
+      <p>✉️&nbsp;patrik.bak.x@gmail.com</p>
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/alicka.webp" loading="lazy">
+    <div class="contact">
+      <h2> Alica Dományová </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/lenka.webp" loading="lazy">
+    <div class="contact">
+      <h2> Lenka Poljaková </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/ema.webp" loading="lazy">
+    <div class="contact">
+      <h2> Ema Čudaiová </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/dzavo.webp" loading="lazy">
+    <div class="contact">
+      <h2> Adam Džavoronok </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/zdenek.webp" loading="lazy">
+    <div class="contact">
+      <h2> Zdeněk Pezlar </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/novota.webp" loading="lazy">
+    <div class="contact">
+      <h2> Matej Novota </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/milosz.webp" loading="lazy">
+    <div class="contact">
+      <h2> Miłosz Płatek </h2>
+      
+       <p><b>Polish organizer</b></p> 
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/dominik.webp" loading="lazy">
+    <div class="contact">
+      <h2> Dominik Bysiewicz </h2>
+      
+       <p><b>Polish organizer</b></p> 
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/blank.webp" loading="lazy">
+    <div class="contact">
+      <h2> Anna Trnková </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/blank.webp" loading="lazy">
+    <div class="contact">
+      <h2> David Hromádka </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/blank.webp" loading="lazy">
+    <div class="contact">
+      <h2> Jakub Krivošík </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/kata.webp" loading="lazy">
+    <div class="contact">
+      <h2> Ekaterina Danilina </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/blank.webp" loading="lazy">
+    <div class="contact">
+      <h2> Markéta Honsejková </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/blank.webp" loading="lazy">
+    <div class="contact">
+      <h2> Daniel Perout </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/blank.webp" loading="lazy">
+    <div class="contact">
+      <h2> Marek Valkovič </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/blank.webp" loading="lazy">
+    <div class="contact">
+      <h2> Michal Imrišek </h2>
+      
+      
+    </div>
+</div>
+  
+  <div class="contact-box">
+    <img src="https://duogeo.cz/images/carlos.webp" loading="lazy">
+    <div class="contact">
+      <h2> Carlos Martínez Quintero </h2>
+      
+      
+    </div>
+</div>
+  
+</div>
+
+    </div>    
+  </body>
+</html>
