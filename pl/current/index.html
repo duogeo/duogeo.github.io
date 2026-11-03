@@ -1,0 +1,234 @@
+
+
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuoGeo</title>
+    <link rel="icon" type="image/png" href="https://duogeo.cz/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/variables.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-menu.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-logo.css?v=1.2">
+    <link rel="stylesheet" type="text/css" href="/css/styles-general.css?v=1.3">
+    <link rel="stylesheet" type="text/css" href="/css/styles-form.css?v=1.5">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css" integrity="sha384-7lU0muIg/i1plk7MgygDUp3/bNRA65orrBub4/OSWHECgwEsY83HaS1x3bljA/XV" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.js" integrity="sha384-RdymN7NRJ+XoyeRY4185zXaxq9QWOOx3O7beyyrRK4KQZrPlCDQQpCu95FoCGPAE" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"        
+	    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+  </head>
+  <body>
+    <nav id="menu-bar">
+      <div id="languages">
+        
+        
+        <a class="lang-link" href="https://duogeo.cz/current/">
+          <img src="https://duogeo.cz/flags/cz.svg" style="height:1.5em;width:100%">
+        </a>
+        
+        <a class="lang-link" href="https://duogeo.cz/en/current/">
+          <img src="https://duogeo.cz/flags/gb.svg" style="height:1.5em;width:100%">
+        </a>
+        
+        <a class="lang-link" href="https://duogeo.cz/pl/current/">
+          <img src="https://duogeo.cz/flags/pl.svg" style="height:1.5em;width:100%">
+        </a>
+        	  
+      </div>
+      <input type="checkbox" name="menu-button" id="menu-button">
+      <script>
+	function closemenu()
+	{
+	    document.getElementById("menu-button").checked = false;
+	}
+      </script>
+      <div id="overlay" onclick="closemenu()"></div>
+      <div></div>
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul id="menu-list">
+        <li><a class="menu-group" href="https://duogeo.cz/pl/">
+            <p>Strona główna</p>
+        </a></li>
+	      <li><a class="menu-group" href="https://duogeo.cz/pl/rules/">
+            <p>O nas</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/pl/current/">
+            <p>Bieżąca edycja</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/pl/archive/">
+            <p>Poprzednie lata</p>
+        </a></li>
+        <li><a class="menu-group" href="https://duogeo.cz/pl/contact/">
+            <p>Kontakt</p>
+        </a></li>
+      </ul>
+    </nav>
+    
+    <div id="strip">
+      <div id="strip-left"></div>
+      <div id="strip-logo"></div>
+      <div id="strip-right"></div>
+    </div>
+
+    <div id="page">
+      
+
+<div id="page-left">
+  <h1 id="biezaca-edycja">Bieżąca edycja</h1>
+<p>Zawody dla szkół <strong>podstawowych</strong> odbędą się w czwartek <strong>14.1.2027</strong> od godziny <strong>11:00 do 15:00.</strong></p>
+<p>Zawody dla szkół <strong>ponadpodstawowych</strong> odbędą się w piątek <strong>15.1.2027</strong> od godziny <strong>11:00 do 16:00.</strong></p>
+<p>Liczba miejsc w każdym mieście jest ograniczona.</p>
+<table>
+    <tr>
+      <th>Liczba zgłoszonych drużyn</th>
+      <th>Szkoły podstawowe</th>
+      <th>Szkoły ponadpodstawowe</th>
+    </tr>
+    <tr>
+      <td>Praha</td>
+      <td id="zs-prague" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 60</td>
+      <td id="ss-prague" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 60</td>
+    </tr><tr>
+      <td>Opava</td>
+      <td id="zs-opava" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 30</td>
+      <td id="ss-opava" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 30</td>
+    </tr><tr>
+      <td>Bratislava</td>
+      <td id="zs-bratislava" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 60</td>
+      <td id="ss-bratislava" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 60</td>
+    </tr><tr>
+      <td>Košice</td>
+      <td id="zs-kosice" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 30</td>
+      <td id="ss-kosice" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 30</td>
+    </tr><tr>
+      <td>Kraków</td>
+      <td id="zs-krakow" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 20</td>
+      <td id="ss-krakow" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 20</td>
+    </tr><tr>
+      <td>Warsaw</td>
+      <td id="zs-warsaw" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 20</td>
+      <td id="ss-warsaw" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 20</td>
+    </tr><tr>
+      <td>Zagreb</td>
+      <td id="zs-zagreb" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 10</td>
+      <td id="ss-zagreb" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 10</td>
+    </tr><tr>
+      <td>Vilnius</td>
+      <td id="zs-vilnius" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 0</td>
+      <td id="ss-vilnius" class="left"><img class="loader" src="https://duogeo.cz/css-loader.gif"> / 10</td>
+    </tr>
+  </table>
+  <script>
+    function fetchRegisterData() {
+	const tasks = [
+	    { url: 'https://register.duogeo.cz/zs-prague', element: 'zs-prague', capacity: '60'},
+	    { url: 'https://register.duogeo.cz/ss-prague', element: 'ss-prague', capacity: '60'},{ url: 'https://register.duogeo.cz/zs-opava', element: 'zs-opava', capacity: '30'},
+	    { url: 'https://register.duogeo.cz/ss-opava', element: 'ss-opava', capacity: '30'},{ url: 'https://register.duogeo.cz/zs-bratislava', element: 'zs-bratislava', capacity: '60'},
+	    { url: 'https://register.duogeo.cz/ss-bratislava', element: 'ss-bratislava', capacity: '60'},{ url: 'https://register.duogeo.cz/zs-kosice', element: 'zs-kosice', capacity: '30'},
+	    { url: 'https://register.duogeo.cz/ss-kosice', element: 'ss-kosice', capacity: '30'},{ url: 'https://register.duogeo.cz/zs-krakow', element: 'zs-krakow', capacity: '20'},
+	    { url: 'https://register.duogeo.cz/ss-krakow', element: 'ss-krakow', capacity: '20'},{ url: 'https://register.duogeo.cz/zs-warsaw', element: 'zs-warsaw', capacity: '20'},
+	    { url: 'https://register.duogeo.cz/ss-warsaw', element: 'ss-warsaw', capacity: '20'},{ url: 'https://register.duogeo.cz/zs-zagreb', element: 'zs-zagreb', capacity: '10'},
+	    { url: 'https://register.duogeo.cz/ss-zagreb', element: 'ss-zagreb', capacity: '10'},{ url: 'https://register.duogeo.cz/zs-vilnius', element: 'zs-vilnius', capacity: '0'},
+	    { url: 'https://register.duogeo.cz/ss-vilnius', element: 'ss-vilnius', capacity: '10'},
+	];
+	tasks.forEach(task => {
+            fetch(task.url)
+	        .then(result => result.text())
+		.then(value => {
+                    document.getElementById(task.element).innerHTML = value + " / " + task.capacity;
+		})
+		.catch(() => {
+		    console.log("Error loading data");
+		});
+	});
+    }
+    fetchRegisterData();
+  </script>
+<h2 id="miejsca-zawodow">Miejsca zawodów</h2>
+<p>W <strong>Pradze</strong>
+<img class="flag" src="/flags/cz.svg">
+miejsce zawodów to MS MFF UK, <strong>Malostranské náměstí 2/25, 118 00 Praha 1.</strong></p>
+<p>W <strong>Opawie</strong>
+<img class="flag" src="/flags/cz.svg">
+miejsce zawodów to Mendelovo gymnázium, <strong>Komenského 397/5, 746 01 Opava.</strong></p>
+<p>W <strong>Bratysławie</strong>
+<img class="flag" src="/flags/sk.svg">
+miejsce zawodów to FMFI UK, <strong>Mlynská dolina pavilon F1, 842 48 Bratislava.</strong></p>
+<p>W <strong>Koszycach</strong>
+<img class="flag" src="/flags/sk.svg">
+miejsce zawodów to UPJŠ, <strong>Šrobárova 1014/2, 040 01 Košice.</strong></p>
+<p>W <strong>Krakowie</strong>
+<img class="flag" src="/flags/pl.svg">
+miejsce zawodów to WMiI UJ, <strong>ul. prof. S. Łojasiewicza 6, 30-348 Kraków.</strong></p>
+<p>W <strong>Warszawie</strong>
+<img class="flag" src="/flags/pl.svg">
+dokładne miejsce zostanie określone później.</p>
+<p>W <strong>Zagrzebiu</strong>
+<img class="flag" src="/flags/hr.svg">
+dokładne miejsce zostanie określone później.</p>
+<p>W <strong>Wilnie</strong>
+<img class="flag" src="/flags/lt.svg">
+miejsce zawodów to Vilnius Lyceum, <strong>Širvintų g. 82, Vilnius.</strong></p>
+<h2 id="rejestracja">Rejestracja</h2>
+<form action="https://register.duogeo.cz/" method="POST">
+  <h2>Formularz rejestracyjny</h2>
+  <input type="text" id="lang" name="lang" value="pl" hidden></label>
+  <label for="teamname">Nazwa drużyny</label>
+  <input type="text" id="teamname" name="teamname" required>
+  <label for="place">Miejsce zawodów</label>
+  <div class="choice">
+    <input type="radio" id="prague" name="place" value="prague" required>
+      <label for="prague">Praha</label><input type="radio" id="opava" name="place" value="opava" required>
+      <label for="opava">Opava</label><input type="radio" id="bratislava" name="place" value="bratislava" required>
+      <label for="bratislava">Bratislava</label><input type="radio" id="kosice" name="place" value="kosice" required>
+      <label for="kosice">Košice</label><input type="radio" id="krakow" name="place" value="krakow" required>
+      <label for="krakow">Kraków</label><input type="radio" id="warsaw" name="place" value="warsaw" required>
+      <label for="warsaw">Warsaw</label><input type="radio" id="zagreb" name="place" value="zagreb" required>
+      <label for="zagreb">Zagreb</label><input type="radio" id="vilnius" name="place" value="vilnius" required>
+      <label for="vilnius">Vilnius</label>
+  </div>
+  <label for="category">Kategoria</label>
+  <div class="choice">
+    <input type="radio" id="SS" name="category" value="ss" required checked>
+    <label for="SS">Szkoły ponadpodstawowe</label>
+    <input type="radio" id="ZS" name="category" value="ss" required>
+    <label for="ZS">Szkoły podstawowe</label>
+  </div>
+  <div class="contestant">
+    <div class="contestantform">
+      <label class="contestantheader">1. Zawodnik</label>
+      <label for="name1">Imię i nazwisko</label>
+      <input type="text" id="name1" name="name1" required>
+      <label for="email1">Email</label>
+      <input type="text" id="email1" name="email1" required>
+      <label for="school1">Szkoła</label>
+      <input type="text" id="school1" name="school1" required>
+      <label for="class1">Klasa</label>
+      <input type="text" id="class1" name="class1" required>
+    </div>
+    <div class="contestantform">
+      <label class="contestantheader">2. Zawodnik</label>
+      <label for="name2">Imię i nazwisko</label>
+      <input type="text" id="name2" name="name2" required>
+      <label for="email2">Email</label>
+      <input type="text" id="email2" name="email2" required>
+      <label for="school2">Szkoła</label>
+      <input type="text" id="school2" name="school2" required>
+      <label for="class2">Klasa</label>
+      <input type="text" id="class2" name="class2" required>
+    </div>
+  </div>
+  <input type="submit" value="Zarejestruj" class="registerbutton">
+</form> 
+
+</div>
+
+
+    </div>    
+  </body>
+</html>
